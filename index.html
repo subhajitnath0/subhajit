@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Subhajit Nath</title>
+    <link rel="stylesheet" href="Home.css">
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <nav>
+        <img class="icon" id="icon" src="Img/icon_manu.png" onclick="manubar();" alt="Manu" style="width: 30px;">
+        <ul class="nav" id="nav">
+            <li class="naveitem" onclick="manubar();"><a href="/" class="item"> Home </a></li>
+            <li class="naveitem" onclick="manubar();"><a href="#My_Project" class="item"> My Project </a></li>
+            <li class="naveitem" onclick="manubar();"><a href="#About" class="item"> About </a></li>
+            <li class="naveitem" onclick="manubar();"><a href="#About" class="#Contact"> Contact </a></li>
+        </ul>
+        
+    </nav>
+
+    <div id="Home">
+        <Header class=" HeaderBg">
+            
+            <img class="subhaImg" src="Img/subha.png" alt="Subhajit">
+
+
+        </Header>
+    </div>
+
+    <div class=" bodyBg" id="My_Project">
+
+        <div>
+            <div>
+                <div class="Text_name">
+                    <div class="Text_style"> Project!</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <ul class="All_Project" id="Project"></ul>
+        </div>
+
+    </div>
+
+    <div class=" bodyBg" id="About">
+
+        <div>
+            <div>
+                <div class="Text_name">
+                    <div class="Text_style2">About</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="About">
+            <p class="Summary">Experienced web developer with a passion for creating innovative and user-friendly websites. Proficient in various programming languages such as HTML, CSS, JavaScript, Java, and C. Skilled in using frameworks such as Bootstrap, jQuery, and Express.js, and experienced with technologies and platforms such as React JS and Node JS. Strong understanding of user experience and design principles. Committed to delivering high-quality, responsive websites on time and within budget.</p>
+            <h2> Skills:</h2>
+            <ul  class="Skills_List" >
+                <li>Programming languages: HTML, CSS, JavaScript, Java, C.</li>
+                <li>Frameworks: Bootstrap, jQuery, Express.js </li>
+                <li>Technologies and platforms: React JS, Node JS. </li>
+                <li>User experience and design principles. </li>
+            </ul>
+        </div>
+
+    </div>
+    <footer class=" bodyBg" id="Contact">
+
+        <div>
+            <div>
+                <div class="Text_name">
+                    <div class="Text_style3">Contact</div>
+                </div>
+            </div>
+        </div>
+
+        <ul class='Contact '>
+          
+            <li class='Sosal-link'>
+              <a href='#' target="_blank"><img src='Img/Footer/facbook_icon.png' class='Sosal-img'></a>            
+            </li>
+            <li class='Sosal-link'>
+              <a href='#' target="_blank"><img src='Img/Footer/instagram_icon.png' class='Sosal-img'></a>            
+            </li>
+            <li class='Sosal-link'>
+              <a href='#' target="_blank"><img src='Img/Footer/linkedin_icon.png' class='Sosal-img'></a>            
+            </li>
+          </ul>
+  
+        </div>
+      </div>
+   
+    </footer>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    var c = document.getElementById('nav').className;
+
+
+function manubar(){
+    var c = document.getElementById('nav').className;
+        if (c === 'nav Click') {
+            document.getElementById('nav').className = `nav`;
+            document.getElementById('icon').className = `icon`;
+            
+        } else if (c === 'nav') {
+            document.getElementById('nav').className = `nav Click`
+            document.getElementById('icon').className = `icon Click`
+        }
+
+    }
+
+
+    var ProjectName = [];
+    var ProjectDescription = [];
+    var ProjectLink = [];
+
+    //Drum-Kit-Player
+    ProjectName.push(" Drum Kit Player ");
+    ProjectDescription.push(`The "Virtual Drum Kit Player" is a web-based application designed to simulate the experience of playing a drum kit. The project is built using HTML, CSS, and JavaScript and utilizes the Web Audio API to create a realistic and interactive drumming experience. The user interface of the application features an array of virtual drums and cymbals, each with its unique sound. The drums are rendered on the screen and can be played by clicking on them or by using the corresponding keyboard keys. The layout of the drums and cymbals is similar to a traditional drum kit, making it easy for users to navigate and play. `);
+    ProjectLink.push("https://subhajitnath0.github.io/Virtual-Drum-Kit-Player/");
+
+
+    // Dicee_Game
+    ProjectName.push(" Dicee Game ");
+    ProjectDescription.push(`The "Dicee Game" is a web-based application, which simulates the rolling of two dice. The project is built using HTML, CSS, and JavaScript, and features a simple user interface with two dice on the screen and a button to roll the dice. Each time the button is pressed, the dice will randomly generate new numbers, simulating a roll, and the results are displayed on the screen. This game is a fun and interactive way to experience the thrill of rolling dice without needing physical dice. Additionally, the game includes a feature that randomly changes the background color each time the dice are rolled, adding an element of surprise and excitement to the game. It's a great tool for game nights, killing time or for people who are learning how to code as it is simple to understand and easy to use.`);
+    ProjectLink.push("https://subhajitnath0.github.io/Dicee_Game/");
+
+    // SmartDustbin 
+    ProjectName.push(" Smart Dustbin ");
+    ProjectDescription.push(`The rate increasing population in our country has increasing rapidly and also we have increase in garbage which have increased environmental issue. Dustbin is a container which collects garbage’s or stores items which recyclable or non-recyclable, decompose and non-decompose. They are usually used in homes, office etc, but in case they are full no one is there to clean it and the garbage are spilled out. The surrounding of a dustbin is also conducive for increasing the pollution level. Air pollution due to a dustbin can produce bacteria and virus which can produce life harmful diseases for human. Therefore, we have designed a smart dustbin using ARDUINO UNO, ultrasonic sensor which will sense the item to be thrown in the dustbin and open the lid with the help of the motor. It is an IOT based project that will bring a new and smart way of cleanliness. It is a decent gadget to make your home clean, due to practically all offspring of home consistently make it grimy and spread litter to a great extent by electronics, rappers and various other things. Since the smart dustbin is additionally intriguing and children make fun with it so it will help to maintain cleanliness in home. It will be applied for various type of waste. Dustbin will open its lid when someone/object is near at some range then it will wait for given time period than it will close automatically`);
+    ProjectLink.push("https://github.com/subhajitnath0/SmartDustbin");
+
+
+
+    // Parsonal-Site
+    ProjectName.push(" Parsonal Site ");
+    ProjectDescription.push(" A personal website for a developer named Subhajit Nath. The website includes several sections that provide information about the developer, such as their name, educational qualifications, technical skills, and hobbies. The website also includes an image of the developer, and a link to a contact page. ");
+    ProjectLink.push("https://github.com/subhajitnath0/Parsonal-Site");
+
+    // EMPLOYEE_MANAGEMENT_SYSTEM
+    ProjectName.push(" EMPLOYEE MANAGEMENT SYSTEM ");
+    ProjectDescription.push(`Day by day we want to work faster and also see that our working time and money are spent less. For these reasons we use different technologies. By using this employee management system, we can get more profit in less time with less employees. It is nothing but a software written on C program.  The main objective of this project is to digitally manage employee data. If we store the data digitally in the computer, we can find it very easily in less time. It is very easy and quick to operate, due to which we need a smaller number of workers to do this work resulting in more profit. `);
+    ProjectLink.push("https://github.com/subhajitnath0/EMPLOYEE_MANAGEMENT_SYSTEM");
+
+
+
+    // Demo 
+    // ProjectName.push(" ");
+    // ProjectDescription.push(" ");
+    // ProjectLink.push(" ");
+
+    let a = '';
+    let hi;
+
+    for (let i = 0; i < ProjectName.length; i++) {
+        hi = `<li class="Project_List" >
+                    <div class="Project">
+                        <div class="Project_item">
+                            <h3 class="Project_Name"> ${ProjectName[i]} </h3>
+                            <p class="Project_Description"> ${ProjectDescription[i]} </p>
+                            <a href="${ProjectLink[i]}" target="_blank" rel="noopener noreferrer" class="GitHub_Link"> Link <img src="Img/link.png" alt="link" width="30px" style="padding: 0px 10px;"></a>
+                        </div>
+                    </div>
+                </li>`;
+        a = ` ${a} ${hi} `;
+    }
+
+
+    document.getElementById("Project").innerHTML = a;
+
+
+
+
+    $(document).ready(function(){
+ 
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+     
+      event.preventDefault();      
+      var hash = this.hash;
+   
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+   
+ 
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+
+    
+
+</script>
+
+</html>

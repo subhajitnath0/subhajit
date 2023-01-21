@@ -1,0 +1,366 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Hind Siliguri', sans-serif;
+    
+}
+
+
+.icon{
+    display: none;
+
+}
+
+.nav{
+   float: right;
+   padding: 0px 50px;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    padding: 15px ;
+    font-size: 20px;
+}
+
+
+.naveitem{
+    display: inline;
+}
+
+
+@media screen and (max-width: 650px){
+    
+    .icon{
+        display: block;
+        float: right;
+        filter: grayscale(1) invert(1);  
+        padding: 15px 25px; 
+        
+    
+    }  
+
+    .icon.Click{
+        transform: rotate(90deg);
+    }
+
+
+    .nav{
+       
+        display: none;
+     }
+
+     .nav.Click{
+        display: block;
+        position: absolute;
+        top: 45px;
+        right: 0px;
+        height: max-content;
+        width: 100%;
+    
+        overflow: hidden;
+        text-align: center;
+        justify-content: center;
+        padding: 10px 0px;
+        background-color: rgb(253, 253, 253);
+     }
+    
+     .naveitem{
+        display: block; 
+        text-align: center;
+        justify-content: center;
+        padding: 20px 40%;  
+          
+    }
+
+    .nav a{
+        color: rgb(26, 25, 46);
+        text-decoration:none;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bolder;
+
+    }
+}
+
+
+.HeaderBg {
+    padding: 0px 30px;
+    margin: 1px;
+    background-color: rgb(26, 25, 46);
+    color: rgb(253, 253, 253);
+    font-style: normal;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.subhaImg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.item:hover {
+    font-size: 20px;
+    color: rgb(214, 203, 203);
+    text-decoration: none;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+
+.bodyBg {
+
+    padding: 20px 20px;
+    margin: 1px;
+    background-color: rgb(26, 25, 46);
+    color: rgb(217, 217, 217);
+    font-style: normal;
+}
+
+.Text_name {
+    padding: 20px;
+    margin: 0px;
+    font-size: 30px;
+    font-family: 'Hind Siliguri', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Text_style {
+
+    white-space: nowrap;
+    font-weight: bold;
+    overflow: hidden;
+    letter-spacing: 5px;
+    border-right: 4px solid rgb(217, 217, 217);
+    animation: text 5s steps(16) alternate infinite;
+}
+
+
+@keyframes text {
+    0% {
+        width: 0;
+    }
+
+    90% {
+        width: 9ch;
+    }
+
+    100% {
+        width: 9ch;
+    }
+}
+
+/* rgb(252, 191, 1) */
+
+
+ul{
+    display: inline;
+  }
+  
+  .All_Project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 0px;
+  
+  }
+.Project_List{
+    list-style: none; 
+    display: inline-flex;
+    margin: 10px;
+    justify-content: center;
+    text-align: justify;
+  position: relative; 
+    
+}
+
+*,
+::after,
+::before {
+  box-sizing: content-box;
+}
+
+.Project{
+    width: 300px;
+    height: 330px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: justify;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Project_Name{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: scroll;
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0px;
+    height: 40px;
+    overflow-x: hidden;
+    scrollbar-width: 0px;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+
+.Project_Description{
+    justify-content: center;
+    align-items:center;
+    text-align:justify;
+    overflow: scroll;
+    font-size: 15px;
+    color: #000;
+    padding: 10px;
+    margin: 0px;
+    height: 200px;
+    overflow-x: hidden;
+    scrollbar-width: 0px;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    background-color: rgb(238, 238, 238);
+    border-radius: 20px;
+    
+}
+
+
+.Project_Name::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .Project_Description::-webkit-scrollbar {
+    display: none;
+  }
+
+  .GitHub_Link{
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    
+  }
+
+  .GitHub_Link:hover{
+    color: rgb(73, 71, 71);
+  }
+
+
+
+  .Text_style2 {
+
+    white-space: nowrap;
+    font-weight: bold;
+    overflow: hidden;
+    letter-spacing: 5px;
+    border-right: 4px solid rgb(217, 217, 217);
+    animation: text2 5s steps(16) alternate infinite;
+}
+
+
+@keyframes text2 {
+    0% {
+        width: 0;
+    }
+
+    90% {
+        width: 7ch;
+    }
+
+    100% {
+        width: 7ch;
+    }
+}
+
+.About{
+    padding: 20px 10%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.Skills_List{
+    padding: 0px 20px;
+    margin: 0px 50px;
+}
+
+ ul {
+    display:block;
+    list-style-type: square;
+}
+
+
+.Text_style3 {
+
+    white-space: nowrap;
+    font-weight: bold;
+    overflow: hidden;
+    letter-spacing: 5px;
+    border-right: 4px solid rgb(217, 217, 217);
+    animation: text3 5s steps(16) alternate infinite;
+}
+
+
+@keyframes text3 {
+    0% {
+        width: 0;
+    }
+
+    90% {
+        width: 8.3ch;
+    }
+
+    100% {
+        width: 8.3ch;
+    }
+}
+
+.Contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 0px;
+  
+  }
+
+
+  .Img-Title{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding:20px;
+    size: 30px;
+    font-weight: bold;
+}
+
+.Sosal-link{
+    list-style: none;
+}
+.Sosal-img{
+    margin: 10px 20px 10px 20px;
+    filter: grayscale(1) invert(90%);
+    width: 50px;
+}
+.Sosal-img:hover{
+    filter: grayscale(0) invert(0);
+}
